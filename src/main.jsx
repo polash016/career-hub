@@ -20,7 +20,8 @@ const router = createBrowserRouter([
     children: [
       {
         path: '/',
-        element: <Common></Common> 
+        element: <Common></Common>,
+        loader: () => fetch('catagory.json')
       },
       {
         path: '/statistics',
