@@ -1,0 +1,110 @@
+[
+  {
+    "id": "job011",
+    "company_logo": "https://example.com/logo11.png",
+    "job_title": "Data Analyst",
+    "company_name": "Financial Services Company",
+    "remote_or_onsite": "Remote",
+    "location": "United States",
+    "fulltime_or_parttime": "Full-time",
+    "salary": "$80,000 - $100,000",
+    "job_description": "We are looking for a data analyst to join our growing team...",
+    "job_responsibility": "• Analyze data and develop insights\n• Create visualizations and reports...",
+    "educational_requirements": "Bachelor's or Master's degree in Data Science, Statistics, or related field",
+    "experiences": "2+ years of experience in data analysis",
+    "contact_information": {
+      "phone": "+1 (555) 345-6789",
+      "email": "jobs@financialservicescompany.com"
+    }
+  },
+  {
+    "id": "job012",
+    "company_logo": "https://example.com/logo12.png",
+    "job_title": "Product Manager",
+    "company_name": "E-commerce Company",
+    "remote_or_onsite": "Remote",
+    "location": "United States",
+    "fulltime_or_parttime": "Full-time",
+    "salary": "$120,000 - $150,000",
+    "job_description": "We are seeking an experienced product manager to help us develop and launch new products...",
+    "job_responsibility": "• Conduct market research and identify product opportunities\n• Develop product roadmap...",
+    "educational_requirements": "Bachelor's or Master's degree in Business Administration, Marketing, or related field",
+    "experiences": "5+ years of experience in product management",
+    "contact_information": {
+      "phone": "+1 (555) 789-0123",
+      "email": "jobs@ecommercecompany.com"
+    }
+  },
+  {
+    "id": "job013",
+    "company_logo": "https://example.com/logo13.png",
+    "job_title": "Software Developer",
+    "company_name": "Startup",
+    "remote_or_onsite": "Onsite",
+    "location": "San Francisco",
+    "fulltime_or_parttime": "Full-time",
+    "salary": "$100,000 - $130,000",
+    "job_description": "We are looking for a talented software developer to join our team...",
+    "job_responsibility": "• Develop and maintain software systems\n• Collaborate with cross-functional teams...",
+    "educational_requirements": "Bachelor's or Master's degree in Computer Science or related field",
+    "experiences": "3+ years of experience in software development",
+    "contact_information": {
+      "phone": "+1 (555) 901-2345",
+      "email": "jobs@startup.com"
+    }
+  },
+  {
+    "id": "job014",
+    "company_logo": "https://example.com/logo14.png",
+    "job_title": "Marketing Coordinator",
+    "company_name": "Marketing Agency",
+    "remote_or_onsite": "Onsite",
+    "location": "Los Angeles",
+    "fulltime_or_parttime": "Full-time",
+    "salary": "$50,000 - $60,000",
+    "job_description": "We are seeking a marketing coordinator to support our marketing team...",
+    "job_responsibility": "• Assist with marketing campaigns\n• Manage social media channels...",
+    "educational_requirements": "Bachelor's degree in Marketing, Communications, or related field",
+    "experiences": "1+ years of experience in marketing or related field",
+    "contact_information": {
+      "phone": "+1 (555) 234-5678",
+      "email": "jobs@marketingagency.com"
+    }
+  },
+  {
+    "id": "job015",
+    "company_logo": "https://example.com/logo15.png",
+    "job_title": "Graphic Designer",
+    "company_name": "Creative Agency",
+    "remote_or_onsite": "Onsite",
+    "location": "New York City",
+    "fulltime_or_parttime": "Full-time",
+    "salary": "$60,000 - $80,000",
+    "job_description": "We are looking for a talented graphic designer to join our team...",
+    "job_responsibility": "• Create designs for various marketing materials\n• Collaborate with cross-functional teams...",
+    "educational_requirements": "Bachelor's or Master's degree in Graphic Design or related field",
+    "experiences": "3+ years of experience in graphic design or related field",
+    "contact_information": {
+      "phone": "+1 (555) 678-9012",
+      "email": "jobs@creativeagency.com"
+    }
+  },
+  {
+    "id": "job016",
+    "company_logo": "https://example.com/logo16.png",
+    "job_title": "Sales Manager",
+    "company_name": "Manufacturing Company",
+    "remote_or_onsite": "Onsite",
+    "location": "Chicago",
+    "fulltime_or_parttime": "Full-time",
+    "salary": "$80,000 - $100,000",
+    "job_description": "We are seeking an experienced sales manager to lead our sales team...",
+    "job_responsibility": "• Develop and implement sales strategies\n• Manage and coach sales team members...",
+    "educational_requirements": "Bachelor's or Master's degree in Business Administration or related field",
+    "experiences": "5+ years of experience in sales, with at least 2 years in a management role",
+    "contact_information": {
+      "phone": "+1 (555) 123-4567",
+      "email": "jobs@manufacturingcompany.com"
+    }
+  }
+]
