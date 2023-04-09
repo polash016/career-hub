@@ -42,7 +42,7 @@ const NavBar = () => {
         </ul>
       </div>
       <div className="navbar-end">
-        <button className="text-xl font-bold bg-blue-500 text-white  btn">Start Applying</button>
+        <button className="btn text-xl font-bold bg-blue-500 text-white">Start Applying</button>
       </div>
     </nav>
   );
