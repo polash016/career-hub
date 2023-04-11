@@ -1,18 +1,22 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link, useLoaderData, useParams } from 'react-router-dom';
 import currencyIcon from '../../public/Logo/currency.png';
 import titleIcon from '../../public/Logo/title.png';
 import phoneIcon from '../../public/Logo/phone.png';
 import emailIcon from '../../public/Logo/email.png';
 import locationIcon from '../../public/Logo/location.png';
+import { addToDb, getShoppingCart } from '../utilities/fakedb';
 
 const JobDetails = () => {
     const {jobId} = useParams();
     const jobs = useLoaderData();
+    // const [cart,setCart] = useState();
     const addedProduct = jobs.find(job => job.id === jobId)
     const {job_description, job_responsibility,experiences,educational_requirements,job_title,salary,contact_information,location} = addedProduct;
-    console.log(contact_information)
-    console.log(addedProduct)
+    const handleAppliedJob = id => {
+        console.log(id)
+        addToDb(id)
+    }
     return (
         <div>
             <div className='flex items-center justify-center w-full h-40'>
@@ -54,7 +58,7 @@ const JobDetails = () => {
                 
 
         <div className='relative mt-12'>
-        <Link to='/appliedJobs'><button onClick={()=> handleAppliedJob(id)} className='absolute -bottom-4 w-[100%] border rounded-md px-2 py-1 text-white bg-blue-500'>Apply Now</button></Link>
+        <Link to='/appliedJobs'><button onClick={()=> handleAppliedJob(addedProduct.id)} className='absolute -bottom-4 w-[100%] border rounded-md px-2 py-1 text-white bg-blue-500'>Apply Now</button></Link>
         </div>
             </div>
 
