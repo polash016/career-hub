@@ -13,6 +13,7 @@ import AppliedJobs from './components/AppliedJobs';
 import Blog from './components/Blog';
 import Common from './components/Common';
 import JobDetails from './components/JobDetails';
+import jobsLoader from './jobsLoader';
 
 const router = createBrowserRouter([
   {
@@ -26,7 +27,8 @@ const router = createBrowserRouter([
       },
       {
         path: '/appliedJobs',
-        element: <AppliedJobs></AppliedJobs>
+        element: <AppliedJobs></AppliedJobs>,
+        loader:  () => fetch('/jobs.json')
       },
       {
         path: '/jobDetails/:jobId',

@@ -11,10 +11,9 @@ const JobDetails = () => {
     const {jobId} = useParams();
     const jobs = useLoaderData();
     // const [cart,setCart] = useState();
-    const addedProduct = jobs.find(job => job.id === jobId)
-    const {job_description, job_responsibility,experiences,educational_requirements,job_title,salary,contact_information,location} = addedProduct;
+    const addedJob = jobs.find(job => job.id === jobId)
+    const {job_description, job_responsibility, experiences,educational_requirements,job_title,salary,contact_information,location} = addedJob;
     const handleAppliedJob = id => {
-        console.log(id)
         addToDb(id)
     }
     return (
@@ -58,7 +57,7 @@ const JobDetails = () => {
                 
 
         <div className='relative mt-12'>
-        <Link to='/appliedJobs'><button onClick={()=> handleAppliedJob(addedProduct.id)} className='absolute -bottom-4 w-[100%] border rounded-md px-2 py-1 text-white bg-blue-500'>Apply Now</button></Link>
+        <Link to='/appliedJobs'><button onClick={()=> handleAppliedJob(addedJob.id)} className='absolute -bottom-4 w-[100%] border rounded-md px-2 py-1 text-white bg-blue-500'>Apply Now</button></Link>
         </div>
             </div>
 

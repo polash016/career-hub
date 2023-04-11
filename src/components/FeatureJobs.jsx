@@ -11,7 +11,7 @@ const FeatureJobs = () => {
         .then(data=>setJobs(data));
     });
     const handleJobDetails = id => {
-        console.log(id);
+        
     }
     return (
         <div className='mb-8'>
