@@ -6,6 +6,7 @@ import phoneIcon from '../../public/Logo/phone.png';
 import emailIcon from '../../public/Logo/email.png';
 import locationIcon from '../../public/Logo/location.png';
 import { addToDb, getShoppingCart } from '../utilities/fakedb';
+import { toast } from 'react-hot-toast';
 
 const JobDetails = () => {
     const {jobId} = useParams();
@@ -15,6 +16,7 @@ const JobDetails = () => {
     const {job_description, job_responsibility, experiences,educational_requirements,job_title,salary,contact_information,location} = addedJob;
     const handleAppliedJob = id => {
         addToDb(id)
+        toast.success('Applied For The Job')
     }
     return (
         <div>
@@ -57,7 +59,8 @@ const JobDetails = () => {
                 
 
         <div className='relative mt-12'>
-        <Link to='/appliedJobs'><button onClick={()=> handleAppliedJob(addedJob.id)} className='absolute -bottom-4 w-[100%] border rounded-md px-2 py-1 text-white bg-blue-500'>Apply Now</button></Link>
+        {/* <Link to='/appliedJobs'></Link> */}
+        <button onClick={()=> handleAppliedJob(addedJob.id)} className='absolute -bottom-4 w-[100%] border rounded-md px-2 py-1 text-white bg-blue-500'>Apply Now</button>
         </div>
             </div>
 

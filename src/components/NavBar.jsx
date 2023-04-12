@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import ActiveLink from "./ActiveLink";
 
 const NavBar = () => {
   return (
@@ -25,20 +26,20 @@ const NavBar = () => {
           <ul
             className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
           >
-            <Link to="/">Home</Link>
-            <Link to="/statistics">Statistics</Link>
-            <Link to="/appliedJobs">Applied Jobs</Link>
-            <Link to="/blog">Blog</Link>
+            <ActiveLink to="/">Home</ActiveLink>
+            <ActiveLink to="/statistics">Statistics</ActiveLink>
+            <ActiveLink to="/appliedJobs">Applied Jobs</ActiveLink>
+            <ActiveLink to="/blog">Blog</ActiveLink>
           </ul>
         </div>
-        <h2 className=" font-extrabold text-3xl">Career Hub</h2>
+        <h2 className=" font-extrabold text-3xl">Future Scope</h2>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1 space-x-4">
-          <Link to="/">Home</Link>
-          <Link to="/statistics">Statistics</Link>
-          <Link to="/appliedJobs">Applied Jobs</Link>
-          <Link to="/blog">Blog</Link>
+          <ActiveLink to="/">Home</ActiveLink>
+          <ActiveLink to="/statistics">Statistics</ActiveLink>
+          <ActiveLink to="/appliedJobs">Applied Jobs</ActiveLink>
+          <ActiveLink to="/blog">Blog</ActiveLink>
         </ul>
       </div>
       <div className="navbar-end">
