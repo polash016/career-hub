@@ -1,8 +1,17 @@
 import React from 'react';
+import vector from '../../public/images/Vector.png'
+import vector2 from '../../public/images/Vector-1.png'
 
 const Blog = () => {
     return (
-        <div>
+        <div className="">
+             <div className='flex flex-row items-center'>
+                <div className=''><img src={vector} alt="" className=' ' /></div>
+                <div className='basis-2/4 flex justify-center items-center'><p className="text-2xl text-center">Blogs</p></div>
+                <div><img src={vector2} alt="" /> </div>
+            </div>
+
+
             <div className='text-center mb-6 mt-8'>
             <h3 className="font-extrabold text-3xl mb-8">When To Use Context API</h3>
             <p className="font-thin text-xl leading-10 mb-6">Context API is Used to share data into child components. Context API helps to send to data in any child components without using props manually. In this way it become easy to shara data throughout the child components from the parent components. In the props method of receving data it becomes very challenging when there is nested child component. In Context method we can receive data from parent components to any child component just by using useContext. </p>

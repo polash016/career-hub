@@ -43,7 +43,7 @@ const NavBar = () => {
         </ul>
       </div>
       <div className="navbar-end">
-        <button className="btn text-xl font-bold bg-blue-500 text-white">Start Applying</button>
+        <button className="btn text-xl font-bold bg-blue-500 text-white lg:mr-32">Start Applying</button>
       </div>
     </nav>
   );

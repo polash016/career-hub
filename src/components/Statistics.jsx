@@ -1,5 +1,7 @@
 import React from 'react';
 import { Area, AreaChart, CartesianGrid, Tooltip, XAxis, YAxis } from 'recharts';
+import vector from '../../public/images/Vector.png'
+import vector2 from '../../public/images/Vector-1.png'
 
 const Statistics = () => {
     const result = [
@@ -38,6 +40,11 @@ const Statistics = () => {
       ];
     return (
         <div>
+          <div className='flex flex-row items-center mb-8'>
+                <div className=''><img src={vector} alt="" className=' ' /></div>
+                <div className='basis-2/4 flex justify-center items-center'><p className="text-2xl text-center">Statistics</p></div>
+                <div><img src={vector2} alt="" /> </div>
+            </div>
 <AreaChart   className='mx-auto mt-12 mb-12' width={730} height={250} data={result}
   margin={{ top: 10, right: 30, left: 0, bottom: 0 }}>
   <defs>

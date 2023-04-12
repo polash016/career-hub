@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import { getShoppingCart } from "../utilities/fakedb";
 import { useLoaderData } from "react-router-dom";
 import AppliedJob from "./AppliedJob";
+import vector from '../../public/images/Vector.png'
+import vector2 from '../../public/images/Vector-1.png'
 
 const AppliedJobs = () => {
   const jobs = useLoaderData();
@@ -21,9 +23,11 @@ const AppliedJobs = () => {
 
   return (
     <div>
-      <div className="flex items-center justify-center w-full h-40">
-        <h4>Applied Jobs</h4>
-      </div>
+      <div className='flex flex-row items-center'>
+                <div className=''><img src={vector} alt="" className=' ' /></div>
+                <div className='basis-2/4 flex justify-center items-center'><p className="text-2xl text-center">Applied Jobs</p></div>
+                <div><img src={vector2} alt="" /> </div>
+            </div>
       <div className="mb-8">
         <div className="flex justify-end m-2">
             <p>Filter By:</p>

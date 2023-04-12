@@ -7,6 +7,8 @@ import emailIcon from '../../public/Logo/email.png';
 import locationIcon from '../../public/Logo/location.png';
 import { addToDb, getShoppingCart } from '../utilities/fakedb';
 import { toast } from 'react-hot-toast';
+import vector from '../../public/images/Vector.png'
+import vector2 from '../../public/images/Vector-1.png'
 
 const JobDetails = () => {
     const {jobId} = useParams();
@@ -20,8 +22,13 @@ const JobDetails = () => {
     }
     return (
         <div>
-            <div className='flex items-center justify-center w-full h-40'>
+            {/* <div className='flex items-center justify-center w-full h-40'>
                 <h4>Job Details</h4>
+            </div> */}
+            <div className='flex flex-row items-center mb-8'>
+                <div className=''><img src={vector} alt="" className=' ' /></div>
+                <div className='basis-2/4 flex justify-center items-center'><p className="text-2xl text-center">Job Details</p></div>
+                <div><img src={vector2} alt="" /> </div>
             </div>
             <div className='flex justify-between mb-8'>
             <div>
