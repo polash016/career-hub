@@ -8,7 +8,7 @@ const Footer = () => {
   <div>
     <span className="text-3xl text-white font-extrabold">CareerHub</span> 
     <p className='text-xs text-slate-400 mb-5 mt-5'>There are many variations of passages <br /> of Lorem Ipsum , but the majority have <br /> suffered alteration in some form.</p>
-    <img src="/public/footer.png" alt="" />
+    <img src={footerImg} alt="" />
   </div> 
   <div>
     <span className="text-sm text-white font-semibold">Company</span> 
