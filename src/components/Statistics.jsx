@@ -1,50 +1,68 @@
 import React from 'react';
-import { Funnel, FunnelChart, LabelList, Pie, PieChart, Tooltip } from 'recharts';
+import { Area, AreaChart, CartesianGrid, Tooltip, XAxis, YAxis } from 'recharts';
 
 const Statistics = () => {
     const result = [
         {
-          "name": "assignment1",
+          "name": "Assignment1",
           "value": 57
         },
         {
-          "name": "assignment2",
+          "name": "Assignment2",
           "value": 58
         },
         {
-          "name": "assignment3",
+          "name": "Assignment3",
           "value": 60
         },
         {
-          "name": "assignment4",
+          "name": "Assignment4",
           "value": 54
         },
         {
-          "name": "assignment5",
+          "name": "Assignment5",
           "value": 53
         },
         {
-          "name": "assignment6",
+          "name": "Assignment6",
           "value": 59
         },
         {
-          "name": "assignment7",
+          "name": "Assignment7",
           "value": 60
         },
         {
-          "name": "assignment8",
+          "name": "Assignment8",
           "value": 60
         }
       ];
     return (
         <div>
-<PieChart width={730} height={250}>
-  <Pie data={result} dataKey="value" nameKey="name" cx="50%" cy="50%" outerRadius={50} fill="#8884d8" />
-  <Pie data={result} dataKey="value" nameKey="name" cx="50%" cy="50%" innerRadius={60} outerRadius={80} fill="#82ca9d" label />
+<AreaChart   className='mx-auto mt-12 mb-12' width={730} height={250} data={result}
+  margin={{ top: 10, right: 30, left: 0, bottom: 0 }}>
+  <defs>
+    <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="5%" stopColor="#8884d8" stopOpacity={0.8}/>
+      <stop offset="95%" stopColor="#8884d8" stopOpacity={0}/>
+    </linearGradient>
+    <linearGradient id="colorPv" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="5%" stopColor="#82ca9d" stopOpacity={0.8}/>
+      <stop offset="95%" stopColor="#82ca9d" stopOpacity={0}/>
+    </linearGradient>
+  </defs>
+  <XAxis dataKey="name" />
+  <YAxis />
+  <CartesianGrid strokeDasharray="3 3" />
   <Tooltip />
-</PieChart>
+  <Area type="monotone" dataKey="value" stroke="#8884d8" fillOpacity={1} fill="url(#colorUv)" />
+</AreaChart>
+
+
         </div>
     );
 };
+
+
+
 
 export default Statistics;
