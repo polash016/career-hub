@@ -22,9 +22,6 @@ const JobDetails = () => {
     }
     return (
         <div>
-            {/* <div className='flex items-center justify-center w-full h-40'>
-                <h4>Job Details</h4>
-            </div> */}
             <div className='flex flex-row items-center mb-8'>
                 <div className=''><img src={vector} alt="" className=' ' /></div>
                 <div className='basis-2/4 flex justify-center items-center'><p className="text-2xl text-center">Job Details</p></div>
