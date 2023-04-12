@@ -7,13 +7,12 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Home from './components/Home';
-import Header from './components/Header';
 import Statistics from './components/Statistics';
 import AppliedJobs from './components/AppliedJobs';
 import Blog from './components/Blog';
 import Common from './components/Common';
 import JobDetails from './components/JobDetails';
-import jobsLoader from './jobsLoader';
+import Error from './components/Error';
 
 const router = createBrowserRouter([
   {
@@ -23,7 +22,7 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <Common></Common>,
-        loader: () => fetch('catagory.json')
+        loader: () => fetch('/catagory.json')
       },
       {
         path: '/appliedJobs',
@@ -42,6 +41,10 @@ const router = createBrowserRouter([
       {
         path: '/blog',
         element: <Blog></Blog>
+      },
+      {
+        path: '*',
+        element: <Error></Error>
       }
     ]
   }

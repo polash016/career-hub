@@ -3,7 +3,8 @@ import Header from './Header';
 import JobCatagory from './JobCatagory';
 import FeatureJobs from './FeatureJobs';
 
-const Common = () => {
+const Common = (props) => {
+    console.log(props)
     return (
         <div>
             <Header></Header>

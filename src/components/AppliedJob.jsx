@@ -16,8 +16,8 @@ const AppliedJob = ({job}) => {
       } = job;
     return (
         <div className='relative flex items-center gap-8 border p-8 mb-6'>
-            <div>
-            <img src={company_logo} alt="" />
+            <div className='flex justify-center items-center w-60 h-60 bg-slate-100'>
+            <img className='p-8' src={company_logo} alt="" />
             </div>
            <div className='flex items-center'>
            <div>
@@ -42,8 +42,8 @@ const AppliedJob = ({job}) => {
         </div>
       </div>
             </div>
-            <div className='ml-96 border rounded-md px-2 py-1 text-white bg-blue-500 mt-4'>
-                <Link to='/jobDetails/:jobId'><button >View Details</button></Link>
+            <div className='absolute right-0 mr-4 border rounded-md px-2 py-1 text-white bg-blue-500 mt-4'>
+                <Link to={`/jobDetails/${job.id}`}><button >View Details</button></Link>
             </div>
            </div>
         </div>

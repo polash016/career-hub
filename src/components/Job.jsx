@@ -40,7 +40,7 @@ const Job = ({ job,handleJobDetails }) => {
       <Link to={`/jobDetails/${id}`}>
         <button
           onClick={() => handleJobDetails(id)}
-          className="border rounded-md px-2 py-1 text-white bg-blue-500 mt-4"
+          className="border rounded-md font-bold text-xl px-7 py-4 text-white bg-blue-500 mt-4"
         >
           View Details
         </button>
