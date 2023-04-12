@@ -1,4 +1,5 @@
 import React from "react";
+import headerImg from '../../public/images/person.png'
 
 const Header = () => {
   return (
@@ -18,7 +19,7 @@ const Header = () => {
         </button>
       </div>
       <div>
-        <img className="w-[100%] h-[90%] m-8 lg:-mt-8" src="/public/person.png" alt="" />
+        <img className="w-[100%] h-[90%] m-8 lg:-mt-8" src={headerImg} alt="" />
       </div>
     </div>
   );
